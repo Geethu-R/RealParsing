@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp" 
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:textStyle="bold"
+       />
+    <TextView
+        android:id="@+id/descriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/titleView"
+        android:layout_toRightOf="@+id/imageView"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/authorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/descriptionView"
+        android:layout_toRightOf="@+id/imageView"
+
+        />
+    <TextView
+        android:id="@+id/pubDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/authorView"
+        android:textStyle="italic"
+
+        />
+
+
+
+</RelativeLayout>
